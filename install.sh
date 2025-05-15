@@ -25,3 +25,11 @@ curl -L -o ${PWD}/qbittorrentee.zip https://github.com/c0re100/qBittorrent-Enhan
 echo "Download binary file: ${ARCH} completed"
 
 unzip qbittorrentee.zip
+
+# Download VueTorrent WebUI
+echo "Downloading WebUI VueTorrent"
+mkdir -p ${PWD}/qbui
+curl -o ${PWD}/qbui/vurtorrent.zip -L https://github.com/VueTorrent/VueTorrent/releases/download/v2.24.2/vuetorrent.zip
+echo "Download VueTorrent completed"
+cd ${PWD}/qbui
+unzip vurtorrent.zip
